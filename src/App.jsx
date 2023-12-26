@@ -1,15 +1,21 @@
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Projects from "./components/Projects/Projects";
 
 function App() {
-
   return (
     <>
-    <div className="min-h-screen bg-slate-800 flex justify-center items-center">
-      <h1 className="text-3xl text-teal-300 w-2/3 text-center leading-[1.25] font-normal ">
-      A <span className="font-medium">Front End Web Developer</span>, utilizing the powers of HTML, CSS, JavaScript, <strong>React</strong>, and <strong>Tailwind CSS</strong>, to create visually appealing and highly interactive user interfaces. Currently, I am in the process of creating wonderful projects to showcase on this portfolio website of mine.
-      </h1>
-      </div>      
+      <Header />
+      <main className="px-8 flex flex-col">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
