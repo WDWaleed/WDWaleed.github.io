@@ -12,6 +12,8 @@ const Contact = () => {
             src="/assets/icons8-twitterx-48.png"
             alt="X"
             className="inline-block mr-8"
+            height={48}
+            width={48}
           />
           @MWA_WebDev
         </div>
@@ -20,6 +22,8 @@ const Contact = () => {
             src="/assets/icons8-whatsapp-48.png"
             alt="Whatsapp"
             className="inline-block mr-8"
+            height={48}
+            width={48}
           />
           +92 314 5013062
         </div>
@@ -28,6 +32,8 @@ const Contact = () => {
             src="/assets/icons8-gmail-48.png"
             alt="Gmail"
             className="inline-block mr-8"
+            height={48}
+            width={48}
           />
           0100waleedahmed0100@gmail.com
         </div>

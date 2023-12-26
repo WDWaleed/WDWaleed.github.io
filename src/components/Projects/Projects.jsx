@@ -32,16 +32,34 @@ const Projects = () => {
 
                 <div className="stack-icons flex justify-center gap-4 mb-2">
                   {project.techStack.map((icon, index) => {
-                    return <img key={index} src={icon} alt="Tech Stack" />;
+                    return (
+                      <img
+                        key={index}
+                        src={icon}
+                        alt="Tech Stack"
+                        height={48}
+                        width={48}
+                      />
+                    );
                   })}
                 </div>
 
                 <div className="links flex justify-center gap-4 mb-4">
                   <a href={`${project.repo}`} target="_blank">
-                    <img src="/assets/icons8-github-48.png" alt="Source" />
+                    <img
+                      src="/assets/icons8-github-48.png"
+                      alt="Source"
+                      height={48}
+                      width={48}
+                    />
                   </a>
                   <a href={`${project.demo}`} target="_blank">
-                    <img src="/assets/icons8-link-48.png" alt="Demo" />
+                    <img
+                      src="/assets/icons8-link-48.png"
+                      alt="Demo"
+                      height={48}
+                      width={48}
+                    />
                   </a>
                 </div>
               </div>

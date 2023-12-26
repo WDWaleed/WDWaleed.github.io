@@ -12,8 +12,8 @@ export default {
         Raleway: "Raleway, sans-serif",
       },
       backgroundImage: {
-        Hamburger: "url('./public/assets/icons8-menu-48.png')",
-        Close: "url('./public/assets/icons8-close-48.png')",
+        Hamburger: "url('/assets/icons8-menu-48.png')",
+        Close: "url('/assets/icons8-close-48.png')",
       },
     },
   },

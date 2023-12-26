@@ -47,6 +47,7 @@ const Header = () => {
             </ul>
           </nav>
           <button
+            aria-label="Toggle Navigation"
             id="toggle-nav"
             className={`${
               navOpen ? "bg-Close" : "bg-Hamburger"

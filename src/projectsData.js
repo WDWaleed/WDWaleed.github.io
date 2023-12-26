@@ -1,7 +1,7 @@
 const projectsArray = [
   {
     title: "Fylo Dark Theme Landing Page",
-    thumbnail: "/assets/screenshot-fylo-dark.png",
+    thumbnail: "/assets/screenshot-fylo-dark.webp",
     techStack: [
       "/assets/icons8-html5-48.png",
       "/assets/icons8-css-48.png",
@@ -14,7 +14,7 @@ const projectsArray = [
   },
   {
     title: "Interactive Card Details Form",
-    thumbnail: "/assets/screenshot-interactive-cards.png",
+    thumbnail: "/assets/screenshot-interactive-cards.webp",
     techStack: [
       "/assets/icons8-html5-48.png",
       "/assets/icons8-css-48.png",
@@ -27,7 +27,7 @@ const projectsArray = [
   },
   {
     title: "Advice Generator App",
-    thumbnail: "/assets/screenshot-advice-generator.png",
+    thumbnail: "/assets/screenshot-advice-generator.webp",
     techStack: [
       "/assets/icons8-html5-48.png",
       "/assets/icons8-css-48.png",
@@ -40,7 +40,7 @@ const projectsArray = [
   },
   {
     title: "Newsletter Sign Up Form",
-    thumbnail: "/assets/screenshot-signup-form.png",
+    thumbnail: "/assets/screenshot-signup-form.webp",
     techStack: [
       "/assets/icons8-html5-48.png",
       "/assets/icons8-css-48.png",
@@ -51,7 +51,7 @@ const projectsArray = [
   },
   {
     title: "Intro Section With Dropdown Navigation",
-    thumbnail: "/assets/screenshot-intro-section.png",
+    thumbnail: "/assets/screenshot-intro-section.webp",
     techStack: [
       "/assets/icons8-html5-48.png",
       "/assets/icons8-css-48.png",
