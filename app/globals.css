@@ -1,26 +1,106 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant light (&:where(.light, .light *));
+
+@theme {
+  /* --color-background: #111827;
+  --color-foreground: #f3f4f6;
+  --color-surface: #1f2937;
+  --color-surface-hover: #374151;
+  --color-component-border: #374151;
+  --color-text-primary: #f3f4f6;
+  --color-text-secondary: #9ca3af;
+  --color-text-heading1: #818cf8;
+  --color-text-muted: #6b7280;
+  --color-accent: #818cf8;
+  --color-accent-hover: #4f46e5;
+  --color-accent-bg: #6366f1;
+  --color-success: #4ade80;
+  --color-warning: #facc15;
+  --color-danger: #f87171;
+  --color-input-bg: #1f2937;
+  --color-input-border: #374151;
+  --color-input-placeholder: #6b7280; */
+
+  --color-main-bg: theme(colors.slate.900);
+  --color-component-bg: theme(colors.slate.800);
+  --color-primary-text: theme(colors.slate.300);
+  --color-heading-text: theme(colors.white);
+  --color-accent: theme(colors.indigo.400);
+
+  --color-btn-bg: theme(colors.indigo.500);
+  --color-btn-hover: rgb(99 102 241 / 0.65);
+  --color-btn-text: theme(colors.white);
+
+  --color-component-border: rgb(99 102 241 / 0.2);
+
+  --color-input-bg: #1f2937;
+  --color-input-border: theme(colors.gray.700);
+  --color-input-placeholder: theme(colors.gray.500);
+  --color-input-outline: rgb(99 102 241 / 0.4);
+
+  --color-success: #4ade80;
+  --color-warning: #facc15;
+  --color-danger: #f87171;
+
+  --font-heading: var(--font-space-grotesk);
+  --font-body: var(--font-poppins);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.light {
+  --color-main-bg: theme(colors.slate.200);
+  --color-component-bg: theme(colors.slate.100);
+  --color-primary-text: theme(colors.gray.700);
+  --color-heading-text: theme(colors.gray.800);
+  --color-accent: theme(colors.indigo.500);
+
+  --color-component-border: theme(colors.slate.300);
+
+  --color-btn-hover: rgb(99 102 241 / 0.95);
+
+  --color-input-bg: theme(colors.slate.200);
+  --color-input-border: theme(colors.slate.300);
+  --color-input-placeholder: theme(colors.gray.500);
+  --color-input-outline: theme(colors.slate.400);
+
+  --color-success: #16a34a;
+  --color-warning: #ca8a04;
+  --color-danger: #dc2626;
+
+  /* --color-background: #f9fafb;
+  --color-foreground: #111827;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f3f4f6;
+  --color-component-border: #e5e7eb;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-text-heading1: #333333;
+  --color-accent: #6366f1;
+  --color-accent-hover: #4f46e5;
+  --color-success: #16a34a;
+  --color-warning: #ca8a04;
+  --color-danger: #dc2626;
+  --color-input-bg: #ffffff;
+  --color-input-border: #d1d5db;
+  --color-input-placeholder: #9ca3af; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+button:hover:not(:disabled),
+[role="button"]:hover,
+input[type="button"]:hover:not(:disabled),
+input[type="submit"]:hover:not(:disabled) {
+  cursor: pointer;
+}
+
+button {
+  transition-duration: 300ms;
 }
