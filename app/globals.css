@@ -24,6 +24,7 @@ html {
   --color-input-border: theme(colors.gray.700);
   --color-input-placeholder: theme(colors.gray.500);
   --color-input-outline: rgb(99 102 241 / 0.4);
+  --color-input-focus: theme(colors.indigo.400);
 
   --color-success: #4ade80;
   --color-warning: #facc15;
@@ -48,6 +49,7 @@ html {
   --color-input-border: theme(colors.slate.300);
   --color-input-placeholder: theme(colors.gray.500);
   --color-input-outline: theme(colors.slate.400);
+  --color-input-focus: theme(colors.indigo.500);
 
   --color-success: #16a34a;
   --color-warning: #ca8a04;
@@ -90,5 +92,3 @@ input[type="submit"]:hover:not(:disabled) {
 button {
   transition-duration: 300ms;
 }
-
-
