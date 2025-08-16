@@ -1,32 +1,18 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 @custom-variant light (&:where(.light, .light *));
 
-@theme {
-  /* --color-background: #111827;
-  --color-foreground: #f3f4f6;
-  --color-surface: #1f2937;
-  --color-surface-hover: #374151;
-  --color-component-border: #374151;
-  --color-text-primary: #f3f4f6;
-  --color-text-secondary: #9ca3af;
-  --color-text-heading1: #818cf8;
-  --color-text-muted: #6b7280;
-  --color-accent: #818cf8;
-  --color-accent-hover: #4f46e5;
-  --color-accent-bg: #6366f1;
-  --color-success: #4ade80;
-  --color-warning: #facc15;
-  --color-danger: #f87171;
-  --color-input-bg: #1f2937;
-  --color-input-border: #374151;
-  --color-input-placeholder: #6b7280; */
+html {
+  scroll-behavior: smooth;
+}
 
+@theme {
   --color-main-bg: theme(colors.slate.900);
   --color-component-bg: theme(colors.slate.800);
   --color-primary-text: theme(colors.slate.300);
   --color-heading-text: theme(colors.white);
-  --color-accent: theme(colors.indigo.400);
+  --color-accent-custom: theme(colors.indigo.400);
 
   --color-btn-bg: theme(colors.indigo.500);
   --color-btn-hover: rgb(99 102 241 / 0.65);
@@ -52,7 +38,7 @@
   --color-component-bg: theme(colors.slate.100);
   --color-primary-text: theme(colors.gray.700);
   --color-heading-text: theme(colors.gray.800);
-  --color-accent: theme(colors.indigo.500);
+  --color-accent-custom: theme(colors.indigo.500);
 
   --color-component-border: theme(colors.slate.300);
 
@@ -104,3 +90,5 @@ input[type="submit"]:hover:not(:disabled) {
 button {
   transition-duration: 300ms;
 }
+
+
