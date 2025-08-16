@@ -1,3 +1,8 @@
+#### 16th August, 2025
+
+1. Responsive navbar
+2. Set a smaller font size for Hero for mobile screens
+
 #### 15th August, 2025
 
 1. Caflisch Script is a good font

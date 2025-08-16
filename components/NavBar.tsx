@@ -1,5 +1,3 @@
-import { ThemeToggle } from "./ThemeToggle";
-
 export default function Navbar() {
   return (
     <div className="bg-component-bg w-full shadow-md sticky top-0 border-b border-component-border -mb-16 z-10">

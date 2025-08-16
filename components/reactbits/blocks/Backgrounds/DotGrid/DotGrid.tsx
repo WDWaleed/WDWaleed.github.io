@@ -1,6 +1,7 @@
 /*
 	Installed from https://reactbits.dev/ts/tailwind/
 */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 "use client";
 import React, { useRef, useEffect, useCallback, useMemo } from "react";

@@ -1,6 +1,4 @@
 "use client";
-
-import { useEffect } from "react";
 import DotGrid from "@/components/reactbits/blocks/Backgrounds/DotGrid/DotGrid";
 import { useTheme } from "next-themes";
 import { AnimatedSection } from "./wrappers/animated-section";

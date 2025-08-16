@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 import { AnimatedSection } from "./wrappers/animated-section";
 import projects from "@/data/projects";
 import ProjectCard from "./ProjectCard";

@@ -3,6 +3,7 @@ import { Providers } from "./providers";
 import { poppins, spaceGrotesk } from "@/lib/utils/fonts";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,8 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+
+          <Toaster position="top-center" reverseOrder={false} />
         </Providers>
       </body>
     </html>

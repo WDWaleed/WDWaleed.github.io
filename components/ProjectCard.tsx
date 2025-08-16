@@ -1,6 +1,7 @@
 import { Link } from "lucide-react";
 import { AnimatedSection } from "./wrappers/animated-section";
 import { FiGithub } from "react-icons/fi";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -17,9 +18,9 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <>
-      <AnimatedSection className="card bg-component-bg w-96 shadow-lg">
+      <AnimatedSection className="card bg-component-bg w-96 shadow-md shadow-slate-900 border-slate-800">
         <figure>
-          <img src={thumbnail} alt={title} />
+          <Image src={thumbnail} alt={title} width={400} height={250} />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
