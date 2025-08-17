@@ -5,12 +5,13 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #1d232a;
 }
-
 
 @theme {
   --color-main-bg: theme(colors.slate.900);
   --color-component-bg: theme(colors.slate.800);
+  --color-component-hover: theme(colors.slate.700);
   --color-primary-text: theme(colors.slate.300);
   --color-heading-text: theme(colors.white);
   --color-accent-custom: theme(colors.indigo.400);

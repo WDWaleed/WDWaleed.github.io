@@ -45,7 +45,7 @@ export default function HamburgerMenu() {
   ];
 
   return (
-    <div className="relative z-50 md:hidden">
+    <div className="relative z-50 bg-component-bg text-primary-text md:hidden">
       {/* Hamburger button */}
       <button
         aria-label={open ? "Close menu" : "Open menu"}
@@ -86,7 +86,7 @@ export default function HamburgerMenu() {
             onClick={() => setOpen(false)}
           >
             <motion.nav
-              className="absolute right-4 top-20 w-48 bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-2xl p-4 backdrop-blur-md"
+              className="absolute right-4 top-20 w-48 bg-component-bg text-primary-text rounded-2xl shadow-2xl p-4 backdrop-blur-md"
               onClick={(e) => e.stopPropagation()}
               initial={{ y: -10, opacity: 0 }}
               animate={{
@@ -108,7 +108,7 @@ export default function HamburgerMenu() {
                   >
                     <a
                       href={href}
-                      className="flex items-center gap-3 text-lg font-medium px-3 py-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800"
+                      className="flex items-center gap-3 text-lg font-medium px-3 py-2 rounded-md hover:bg-component-hover duration-100 transition-colors"
                       onClick={() => setOpen(false)}
                     >
                       <Icon className="w-5 h-5" /> {label}

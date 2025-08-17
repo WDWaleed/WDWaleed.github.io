@@ -3,7 +3,7 @@ import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
   return (
-    <div className="bg-component-bg w-full shadow-md sticky top-0 border-b border-component-border -mb-16 z-10">
+    <div className="bg-component-bg w-full text-primary-text shadow-md sticky top-0 border-b border-component-border -mb-16 z-10">
       <header className="max-w-[1440px] mx-auto p-4 flex justify-between items-center">
         <h1 className="text-heading-text font-heading font-bold text-2xl">
           <span className="text-accent-custom font-extrabold">WD</span>Waleed

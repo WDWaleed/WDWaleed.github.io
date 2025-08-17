@@ -9,7 +9,7 @@ export default function Projects() {
       className="  p-4 bg-gradient-to-br  from-indigo-400 to-slate-900"
     >
       <AnimatedSection className="min-h-screen w-full max-w-[1440px] mx-auto py-16 flex flex-col justify-center">
-        <h2 className="font-bold text-3xl md:text-4xl tracking-wide text-center uppercase mb-8 ">
+        <h2 className="font-bold text-heading-text text-3xl md:text-4xl tracking-wide text-center uppercase mb-8 ">
           Projects
         </h2>
         <div className="flex flex-wrap gap-6 justify-center">

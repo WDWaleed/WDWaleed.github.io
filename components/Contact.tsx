@@ -48,7 +48,7 @@ export default function Contact() {
   return (
     <div id="contact" className="p-4 min-h-screen flex flex-col justify-center">
       <AnimatedSection className=" w-full max-w-[1440px] mx-auto py-16">
-        <h2 className="font-bold text-3xl md:text-4xl tracking-wide text-center uppercase mb-8">
+        <h2 className="font-bold text-3xl md:text-4xl text-heading-text tracking-wide text-center uppercase mb-8">
           CONTACT
         </h2>
         <AnimatedSection>
@@ -91,7 +91,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="btn bg-btn-bg rounded-full w-full text-center hover:bg-btn-hover"
+              className="btn bg-btn-bg rounded-full w-full text-center border-none text-heading-text hover:bg-btn-hover"
             >
               {isSubmitting ? "Sending..." : "Submit"}
             </button>

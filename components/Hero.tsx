@@ -39,12 +39,12 @@ export default function Hero() {
           <hr className="border-slate-500 w-2/3 max-w-[375px] mx-auto" />
           <div className="space-x-6">
             <a href="#projects">
-              <button className="btn btn-md md:btn-lg bg-btn-bg hover:bg-btn-hover text-btn-text rounded-full ">
+              <button className="btn btn-md md:btn-lg border-none bg-btn-bg hover:bg-btn-hover text-btn-text rounded-full ">
                 Projects
               </button>
             </a>
             <a href="#contact">
-              <button className="btn btn-md md:btn-lg bg-btn-bg hover:bg-btn-hover text-btn-text rounded-full ">
+              <button className="btn btn-md md:btn-lg bg-btn-bg hover:bg-btn-hover text-btn-text rounded-full border-none">
                 Contact
               </button>
             </a>

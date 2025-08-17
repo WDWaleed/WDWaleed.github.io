@@ -23,7 +23,7 @@ export default function ProjectCard({
           <Image src={thumbnail} alt={title} width={400} height={250} />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{title}</h2>
+          <h2 className="card-title text-heading-text">{title}</h2>
           <div className="card-actions justify-center">
             <a href={demo} target="_blank">
               <button className="btn btn-neutral btn-circle">
