@@ -1,3 +1,5 @@
+import HamburgerMenu from "./HamburgerMenu";
+
 export default function Navbar() {
   return (
     <div className="bg-component-bg w-full shadow-md sticky top-0 border-b border-component-border -mb-16 z-10">
@@ -5,7 +7,7 @@ export default function Navbar() {
         <h1 className="text-heading-text font-heading font-bold text-2xl">
           <span className="text-accent-custom font-extrabold">WD</span>Waleed
         </h1>
-        <nav>
+        <nav className="hidden md:block">
           <ul className="flex justify-center items-center gap-8 font-semibold">
             {["Home", "Projects", "Contact"].map((item) => (
               <a
@@ -21,8 +23,8 @@ export default function Navbar() {
               </a>
             ))}
           </ul>
-        </nav>
-        {/* <ThemeToggle /> */}
+        </nav>  
+        <HamburgerMenu />
       </header>
     </div>
   );

@@ -48,7 +48,7 @@ export default function Contact() {
   return (
     <div id="contact" className="p-4 min-h-screen flex flex-col justify-center">
       <AnimatedSection className=" w-full max-w-[1440px] mx-auto py-16">
-        <h2 className="font-bold text-4xl tracking-wide text-center uppercase mb-8">
+        <h2 className="font-bold text-3xl md:text-4xl tracking-wide text-center uppercase mb-8">
           CONTACT
         </h2>
         <AnimatedSection>
