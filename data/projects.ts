@@ -10,7 +10,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: "MERN Task Manager",
-    thumbnail: "/screenshot-mern-task-manager.png",
+    thumbnail: "/screenshot-mern-task-manager.webp",
     repo: "https://github.com/WDWaleed/MERN-Task-Manager-Frontend",
     demo: "https://mern-task-manager-frontend-eight.vercel.app",
   },
