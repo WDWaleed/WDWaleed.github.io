@@ -7,6 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 @theme {
   --color-main-bg: theme(colors.slate.900);
   --color-component-bg: theme(colors.slate.800);
@@ -54,23 +55,6 @@ html {
   --color-success: #16a34a;
   --color-warning: #ca8a04;
   --color-danger: #dc2626;
-
-  /* --color-background: #f9fafb;
-  --color-foreground: #111827;
-  --color-surface: #ffffff;
-  --color-surface-hover: #f3f4f6;
-  --color-component-border: #e5e7eb;
-  --color-text-primary: #111827;
-  --color-text-secondary: #4b5563;
-  --color-text-heading1: #333333;
-  --color-accent: #6366f1;
-  --color-accent-hover: #4f46e5;
-  --color-success: #16a34a;
-  --color-warning: #ca8a04;
-  --color-danger: #dc2626;
-  --color-input-bg: #ffffff;
-  --color-input-border: #d1d5db;
-  --color-input-placeholder: #9ca3af; */
 }
 
 h1,

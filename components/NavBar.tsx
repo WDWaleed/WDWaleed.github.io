@@ -1,4 +1,5 @@
 import HamburgerMenu from "./HamburgerMenu";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
   return (
@@ -23,8 +24,9 @@ export default function Navbar() {
               </a>
             ))}
           </ul>
-        </nav>  
+        </nav>
         <HamburgerMenu />
+        {/* <ThemeToggle /> */}
       </header>
     </div>
   );

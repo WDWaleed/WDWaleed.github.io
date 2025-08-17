@@ -6,6 +6,7 @@ import { AnimatedSection } from "./wrappers/animated-section";
 export default function Hero() {
   const { theme, systemTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
+  console.log(theme, currentTheme);
 
   return (
     <div id="home">

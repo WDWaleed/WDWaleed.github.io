@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Providers } from "./providers";
 import { poppins, spaceGrotesk } from "@/lib/utils/fonts";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
 import { Toaster } from "react-hot-toast";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "WDWaleed | Full-Stack Web Developer",
@@ -58,14 +58,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${spaceGrotesk.variable}`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${poppins.variable} ${spaceGrotesk.variable}`}
+    >
       <body>
-        <Providers>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
           <Navbar />
           {children}
 
           <Toaster position="top-center" reverseOrder={false} />
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );

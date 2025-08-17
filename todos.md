@@ -2,6 +2,7 @@
 
 1. Responsive navbar
 2. Set a smaller font size for Hero for mobile screens
+3. Fix the issues with theme
 
 #### 15th August, 2025
 
