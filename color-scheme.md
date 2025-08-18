@@ -41,7 +41,7 @@
 ### Border Colors
 
 - border-slate-700 // Default card borders
-- border-slate-600 // Input and outline borders  
+- border-slate-600 // Input and outline borders
 - border-emerald-500/20 // Emerald accent borders
 - border-emerald-500/50 // Stronger emerald borders (hover states)
 
@@ -60,7 +60,9 @@
 - backdrop-blur-sm // Glass-morphism effects
 
 ## Component-Specific Color Usage
+
 ### Navigation/Header
+
 - Background: bg-slate-900
 - Text: text-white, text-slate-300
 - Hover: hover:text-emerald-400
@@ -70,6 +72,7 @@
 - Hover borders: hover:border-emerald-500/50
 
 ### Buttons
+
 - Primary: bg-emerald-500 hover:bg-emerald-600 text-white
 - Secondary: border-slate-600 text-slate-300 hover:bg-slate-800
 - Ghost: bg-emerald-500/10 text-emerald-400

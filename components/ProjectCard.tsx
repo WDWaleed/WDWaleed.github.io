@@ -18,7 +18,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <>
-      <AnimatedSection className="card bg-component-bg w-96 shadow-md shadow-slate-900 border-slate-800">
+      <AnimatedSection className="card bg-component-bg w-96 border-slate-800 shadow-md shadow-slate-900">
         <figure>
           <Image src={thumbnail} alt={title} width={400} height={250} />
         </figure>

@@ -14,13 +14,13 @@ export async function POST(req: Request) {
     if (err instanceof Error) {
       return NextResponse.json(
         { success: false, error: err.message },
-        { status: 500 }
+        { status: 500 },
       );
     }
     // fallback in case it's not an Error object
     return NextResponse.json(
       { success: false, error: "An unknown error occurred" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

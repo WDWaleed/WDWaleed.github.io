@@ -17,7 +17,7 @@ html {
   --color-accent-custom: theme(colors.indigo.400);
 
   --color-btn-bg: theme(colors.indigo.500);
-  --color-btn-hover: rgb(99 102 241 / 0.65);
+  --color-btn-hover: theme(colors.indigo.600);
   --color-btn-text: theme(colors.white);
 
   --color-component-border: rgb(99 102 241 / 0.2);

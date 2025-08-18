@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <div id="home">
       {/* Background Grid */}
-      <div className="absolute inset-0 pointer-events-none -z-10">
+      <div className="pointer-events-none absolute inset-0 -z-10">
         <DotGrid
           baseColor={currentTheme === "dark" ? "#271E37" : "#eeeeee"}
           activeColor={currentTheme === "dark" ? "#5227FF" : "#5227ff"}
@@ -26,20 +26,20 @@ export default function Hero() {
       </div>
 
       {/* Foreground Content */}
-      <AnimatedSection className="relative w-full h-screen overflow-hidden">
-        <section className="min-h-screen flex items-center text-primary-text justify-center flex-col gap-12 py-12">
+      <AnimatedSection className="relative h-screen w-full overflow-hidden">
+        <section className="text-primary-text flex min-h-screen flex-col items-center justify-center gap-12 py-12">
           <div>
-            <h1 className=" text-4xl md:text-5xl my-2 font-bold text-center">
+            <h1 className="my-2 text-center text-4xl font-bold md:text-5xl">
               MUHAMMAD WALEED AHMED
             </h1>
-            <p className="font-thin italic text-xl md:text-2xl text-center">
+            <p className="text-center text-xl font-thin italic md:text-2xl">
               Full-Stack Web Developer
             </p>
           </div>
-          <hr className="border-slate-500 w-2/3 max-w-[375px] mx-auto" />
+          <hr className="mx-auto w-2/3 max-w-[375px] border-slate-500" />
           <div className="space-x-6">
             <a href="#projects">
-              <button className="btn btn-md md:btn-lg border-none bg-btn-bg hover:bg-btn-hover text-btn-text rounded-full ">
+              <button className="btn btn-md md:btn-lg bg-btn-bg hover:bg-btn-hover text-btn-text rounded-full border-none">
                 Projects
               </button>
             </a>

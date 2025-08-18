@@ -8,6 +8,7 @@ import { FloatingInput } from "./wrappers/floating-input";
 import { FloatingTextarea } from "./wrappers/floating-textarea";
 import axios, { AxiosError } from "axios";
 import toast from "react-hot-toast";
+import { Send } from "lucide-react";
 
 const contactSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -46,14 +47,14 @@ export default function Contact() {
     reset();
   };
   return (
-    <div id="contact" className="p-4 min-h-screen flex flex-col justify-center">
-      <AnimatedSection className=" w-full max-w-[1440px] mx-auto py-16">
-        <h2 className="font-bold text-3xl md:text-4xl text-heading-text tracking-wide text-center uppercase mb-8">
+    <div id="contact" className="flex min-h-screen flex-col justify-center p-4">
+      <AnimatedSection className="mx-auto w-full max-w-[1440px] py-16">
+        <h2 className="text-heading-text mb-8 text-center text-3xl font-bold tracking-wide uppercase md:text-4xl">
           CONTACT
         </h2>
         <AnimatedSection>
           <form
-            className="max-w-md shadow-lg rounded-md border border-slate-800 shadow-slate-900 p-8 mx-auto space-y-4"
+            className="mx-auto max-w-md space-y-4 rounded-md border border-slate-800 p-8 shadow-lg shadow-slate-900"
             onSubmit={handleSubmit(onSubmit)}
           >
             <FloatingInput
@@ -91,9 +92,16 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="btn bg-btn-bg rounded-full w-full text-center border-none text-heading-text hover:bg-btn-hover"
+              className="btn bg-btn-bg text-heading-text hover:bg-btn-hover w-full rounded-full border-none text-center"
             >
-              {isSubmitting ? "Sending..." : "Submit"}
+              {isSubmitting ? (
+                "Sending..."
+              ) : (
+                <span className="flex gap-4 text-base">
+                  <Send width={20} />
+                  Submit
+                </span>
+              )}
             </button>
           </form>
         </AnimatedSection>

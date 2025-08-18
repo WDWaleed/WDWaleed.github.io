@@ -6,13 +6,13 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="  p-4 bg-gradient-to-br  from-indigo-400 to-slate-900"
+      className="bg-gradient-to-br from-indigo-400 to-slate-900 p-4"
     >
-      <AnimatedSection className="min-h-screen w-full max-w-[1440px] mx-auto py-16 flex flex-col justify-center">
-        <h2 className="font-bold text-heading-text text-3xl md:text-4xl tracking-wide text-center uppercase mb-8 ">
+      <AnimatedSection className="mx-auto flex min-h-screen w-full max-w-[1440px] flex-col justify-center py-16">
+        <h2 className="text-heading-text mb-8 text-center text-3xl font-bold tracking-wide uppercase md:text-4xl">
           Projects
         </h2>
-        <div className="flex flex-wrap gap-6 justify-center">
+        <div className="flex flex-wrap justify-center gap-6">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
